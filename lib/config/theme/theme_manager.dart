@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:notely/core/util/constants/string_manger.dart';
+import 'package:notely/core/util/constants/strings_manger.dart';
 
 class ThemeManger{
   static defaultTheme(){
     return ThemeData(
-      fontFamily: StringManger.defaultFontName,
+      fontFamily: StringsManger.defaultFontName,
     );
   }
 }
