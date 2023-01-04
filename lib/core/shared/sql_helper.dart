@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:notely/core/util/constants/strings_manger.dart';
 import 'package:path/path.dart' as path;
 import 'package:sqflite/sqflite.dart';
@@ -32,7 +33,7 @@ class SqlHelper {
       "isPinned" INTEGER DEFAULT 0,
     )
     ''');
-    print('created');
+    debugPrint('created');
   }
 
   Future<List<Map>> selectFromDatabase(String sql) async{
