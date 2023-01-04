@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:notely/config/theme/theme_manager.dart';
 import 'package:notely/features/notes/presentation/screens/home_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,9 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Notely',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeManger.defaultTheme(),
       home: const HomeScreen(),
     );
   }
