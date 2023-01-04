@@ -1,4 +1,4 @@
-import 'package:notely/core/util/constants/string_manger.dart';
+import 'package:notely/core/util/constants/strings_manger.dart';
 import 'package:path/path.dart' as path;
 import 'package:sqflite/sqflite.dart';
 
@@ -7,7 +7,7 @@ class SqlHelper {
   static Database? _db;
   Future<Database?> get db async {
     if (_db == null) {
-      _db = await initDatabase(StringManger.databaseName);
+      _db = await initDatabase(StringsManger.databaseName);
       return _db;
     } else {
       return _db;
